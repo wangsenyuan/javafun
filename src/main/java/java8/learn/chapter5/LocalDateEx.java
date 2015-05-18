@@ -1,5 +1,6 @@
 package java8.learn.chapter5;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 /**
@@ -14,5 +15,12 @@ public class LocalDateEx {
     public static void main(String[] args) {
         LocalDateEx localDateEx = new LocalDateEx();
         System.out.println(localDateEx.now());
+        LocalDateEx.enumDayOfWeek();
+    }
+
+    public static void enumDayOfWeek() {
+        for (DayOfWeek one : DayOfWeek.values()) {
+            System.out.println(one + "=>" + one.getValue());
+        }
     }
 }
