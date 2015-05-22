@@ -51,7 +51,7 @@ public class Exercise9 {
                 a = a.mul(a);
                 n >>= 1;
             }
-            return a;
+            return b;
         }
     }
 
